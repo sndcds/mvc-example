@@ -2,17 +2,6 @@ import { Model, View, Router, Controller, Component, GridComponent } from '@sndc
 import { App, AppModel, TestComponent, DistrictSelectComponent, PopComponent, StateController } from './index.js'
 
 
-/**
- * Generates a random RGB color.
- * @returns {string} A random RGB color string.
- */
-function getRandomColor() {
-    const red = Math.floor(Math.random() * 256)
-    const green = Math.floor(Math.random() * 256)
-    const blue = Math.floor(Math.random() * 256)
-    return `rgb(${red}, ${green}, ${blue})`
-}
-
 // Create an instance of AppModel
 const model = new AppModel()
 
