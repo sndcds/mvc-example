@@ -1,6 +1,6 @@
 {
   "name": "@sndcds/mvc/example",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "description": "Experimental Generative MVC Library",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
@@ -13,7 +13,7 @@
     "staticPath": "static"
   },
   "dependencies": {
-    "@sndcds/mvc": "^0.0.3"
+    "@sndcds/mvc": "^0.0.8"
   },
   "devDependencies": {
     "eslint": "8.50.0",

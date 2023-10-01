@@ -79,7 +79,6 @@ export default class PopComponent extends Component {
         const spot3 = `${this.barOffset + this.barSize - 0.1}%`
         const spot4 = `${this.barOffset + this.barSize}%`
         const gradient = `linear-gradient(90deg, ${color1} 0%, ${color1} ${spot1}, ${color2} ${spot2}, ${color2} ${spot3}, ${color1} ${spot4})`
-        // console.log(gradient)
 
         a = this.e.appendChild(this.domCreateElement('div'))
         a.style.textAlign = 'left'

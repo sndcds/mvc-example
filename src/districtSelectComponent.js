@@ -13,6 +13,7 @@ export default class DistrictSelectComponent extends Component {
     }
 
     setProperties(data) {
+        console.trace()
         const selectElement = this.domCreateElement('select')
 
         data.data.forEach((item) => {
