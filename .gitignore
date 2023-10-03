@@ -1,5 +1,7 @@
-node_modules/
 .parcel-cache/
+node_modules/
+coverage/
+venv/
 dist/
 .DS_Store
 .env

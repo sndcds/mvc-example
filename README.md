@@ -1,2 +1,3 @@
 # mvc-example
-A simple demonstration on how to use the experimental @sndcds/mvc package
+
+A simple example how to use the experimental [@sndcds/mvc](https://www.npmjs.com/package/@sndcds/mvc) package.

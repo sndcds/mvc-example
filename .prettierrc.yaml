@@ -1,0 +1,22 @@
+semi: false
+singleQuote: true
+bracketSameLine: true
+singleAttributePerLine: false
+htmlWhitespaceSensitivity: css
+trailingComma: none
+arrowParens: always
+
+endOfLine: lf
+
+overrides:
+  - files:
+      - '**/*.css'
+    options:
+      semi: true
+      tabWidth: 2
+      singleQuote: false
+  - files:
+      - '**/*.yaml'
+    options:
+      tabWidth: 2
+      singleQuote: false
