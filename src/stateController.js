@@ -39,16 +39,10 @@ export default class StateController {
   }
 
   buildView() {
-    console.log(this.app.view)
     // Create a Grid called 'container1' within the view
     const container1 = new Grid(this.app.view, 'container1')
     const subView = new Grid(container1, 'subView')
-    console.log(subView)
-
     const c = new DistrictSelect(subView, 'districtSelect')
-    console.log(c)
-
-    // new TestComponent(subView, 'test1')
 
     const container2 = new Grid(this.app.view, 'container2')
 

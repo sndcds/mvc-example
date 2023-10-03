@@ -4,6 +4,7 @@ import { Component } from '@sndcds/mvc'
 export default class DistrictSelect extends Component {
   constructor(parent, id, setupData) {
     super(parent, id, setupData)
+
     this.setProperties(setupData)
   }
 
@@ -16,12 +17,10 @@ export default class DistrictSelect extends Component {
   }
 
   build() {
-    console.log(this.parent)
     this.e = this.addDomElement('div')
   }
 
   setWithData(data) {
-    console.log(data)
     const selectElement = this.domCreateElement('select')
 
     data.data.forEach((item) => {
@@ -41,10 +40,11 @@ export default class DistrictSelect extends Component {
   }
 
   bindDistrictChanged(handler) {
-    console.log(this.e)
     const e = this.e.children.item(0)
+
     e.addEventListener('change', (event) => {
       const selectedOption = e.value
+
       handler(selectedOption - 1)
     })
   }
