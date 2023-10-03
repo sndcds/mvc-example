@@ -1,72 +1,154 @@
-html, body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+:root {
+  --primary-color: #0069f6;
+  --primary-light-color: #d1e4fd;
+  --background-color: #fff;
+}
+
+button {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+}
+
+button:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
 .grid {
-    padding: 20px;
+  padding: 20px;
 }
 
-.pop {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+.sm-vpb {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.popLabel {
-    font-size: 0.8em;
-    padding: 8px 0;
+.num-percent .custom-num-percent {
+  color: #999;
 }
 
-.popValue {
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 8px 0;
+.num-percent::after {
+  /* TODO */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10px; /* Adjust the width of the separator as needed */
+  background-color: #ccc; /* Adjust the color of the separator as needed */
+  z-index: 1;
 }
 
-.popBar {
-    height: 100%;
-    border-radius: 4px;
+.num-percent .label,
+.custom-num-percent .label {
+  font-size: 1em;
+  padding: 8px 0;
 }
 
-.popPercentage {
-    font-size: 0.8em;
-    padding: 8px 0;
+.num-percent .value,
+.custom-num-percent .value {
+  color: #000;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 8px 0;
 }
 
-.xyz_pop {
-    display: grid;
-    grid-template-rows: 1fr 1fr 0.3fr 0.6fr;
-    color: #333;
-    padding: 4px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    transition: 0.2s;
+.num-percent .bar,
+.custom-num-percent .bar {
+  height: 10px;
+  border-radius: 2px;
 }
 
-.xyz_pop:hover {
-    color: #000;
-    border: 1px solid #999;
+.custom-num-percent .bar {
+  height: 20px;
+  border-radius: 10px;
 }
 
-.xyz_popLabel {
-    font-size: 0.8em;
-    padding: 8px 0;
+.num-percent .percentage,
+.custom-num-percent .percentage {
+  font-size: 0.8em;
+  padding: 8px 0;
 }
 
-.xyz_popValue {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 8px 0;
+.custom-vbar {
+  padding: 40px;
+  background-color: #fff;
+  grid-column-gap: 3px;
+  min-height: 160px;
+  max-width: 600px;
 }
 
-.xyz_popBar {
-    height: 100%;
-    border-radius: 4px;
+.custom-vbar div {
+  background-color: var(--primary-color);
+  border-radius: 2px;
 }
 
-.xyz_popPercentage {
-    font-size: 0.8em;
-    padding: 8px 0;
+.sm-grid2 {
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
+
+.abc-sm-grid2 {
+  grid-template-columns: 8fr 4fr;
+  grid-gap: 0;
+}
+
+.section {
+  grid-gap: 10px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.apple {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.banana {
+  grid-template-columns: 3fr 1fr;
+}
+
+.ibm {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.lenovo {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.sgi {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.arena {
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+@media (width <= 900px) {
+  .lenovo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width <= 1200px) {
+  .banana {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-vbar {
+    justify-self: center;
+    min-width: 400px;
+    padding: 0;
+  }
 }
