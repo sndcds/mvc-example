@@ -1,12 +1,13 @@
 {
 	"name": "@sndcds/mvc-example",
-	"version": "0.0.31",
+	"version": "0.0.33",
 	"description": "Experimental Generative MVC Library",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel serve --no-cache",
-    "build": "parcel build --public-url '.' --no-cache",
+    "clean": "rm -rf dist .parcel-cache",
+    "start": "pnpm run clean && parcel serve",
+    "build": "pnpm run clean && parcel build --public-url '.'",
     "htmlhint": "htmlhint \"**/*.html\" --ignore \"dist/**/*.html\" --format unix",
     "prettier": "npm:@yuhr/prettier",
     "lint:js": "pnpm exec eslint src",
@@ -18,7 +19,7 @@
     "staticPath": "static"
   },
   "dependencies": {
-    "@sndcds/mvc": "^0.0.31"
+    "@sndcds/mvc": "^0.0.33"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
