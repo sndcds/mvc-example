@@ -1,7 +1,7 @@
 import { View, Controller, Component, Router } from '@sndcds/mvc'
 
 
-export default class App extends Controller {
+export class App extends Controller {
   /* eslint no-useless-constructor: 0 */
   constructor(model, view) {
     super(model, view)

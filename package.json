@@ -1,7 +1,7 @@
 {
 	"name": "@sndcds/mvc-example",
-	"version": "0.0.31",
-	"description": "Experimental Generative MVC Library",
+	"version": "0.0.38",
+	"description": "Demonstration how to use the generative @sndcds/mvc library",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -18,7 +18,7 @@
     "staticPath": "static"
   },
   "dependencies": {
-    "@sndcds/mvc": "^0.0.31"
+    "@sndcds/mvc": "^0.0.38"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
