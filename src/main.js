@@ -1,5 +1,5 @@
 import { Model, View, Router, Controller, Component, GridComponent } from '@sndcds/mvc'
-import { App, AppModel, StateController } from './index.js'
+import { App, AppModel, HomeController, DataController, FormController } from './index.js'
 
 // Create model
 const model = new AppModel()
@@ -18,15 +18,15 @@ const routes = [
 ]
 
 const homeController = () => {
-  new StateController(app)
+  new HomeController(app)
 }
 
 const dataController = () => {
-  new StateController(app)
+  new DataController(app)
 }
 
 const formController = () => {
-  new StateController(app)
+  new FormController(app)
 }
 
 // Create an object that maps controller names to controller functions.
