@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@sndcds/mvc':
-    specifier: ^0.0.39
-    version: 0.0.39
+    specifier: ^0.0.41
+    version: 0.0.41
 
 devDependencies:
   '@parcel/config-default':
@@ -1141,8 +1141,8 @@ packages:
       nullthrows: 1.1.1
     dev: true
 
-  /@sndcds/mvc@0.0.39:
-    resolution: {integrity: sha512-aacHuhHUBGUreoOAwk9pWccl/hU3oLsg8/RmFEKIps0Qaq/+Prcb4k+Xr4UOXW+f/LVOJYPcNKMeMmDE+OXz2g==}
+  /@sndcds/mvc@0.0.41:
+    resolution: {integrity: sha512-av6mAaXPBTUADrljmc+4LKXp4zoB/Nm+0W0bOlDv6Yjyo3NKWNg1BKrD4eSea/ghVL2wT0S4LIdMEEAnLnu8wg==}
     dev: false
 
   /@swc/core-darwin-arm64@1.3.91:

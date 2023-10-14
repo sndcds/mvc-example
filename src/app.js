@@ -7,19 +7,13 @@ export class App extends Controller {
     super(model, view)
   }
 
-  initApp(url, id) {
+  initApp(url) {
     this.data = this.model.getStorage('data')
-    this.districtId = this.model.getStorage('districtId')
-
-    if (this.districtId === null) {
-      this.model.setDistrictId(id)
-    }
-    else {
-      this.model.setDistrictId(this.districtId)
-    }
 
     if (this.data === null) {
-      this.fetchData(url)
+      if (typeof url === 'string') {
+        this.fetchData(url)
+      }
     }
     else {
       // this.state.onDataChanged(this.data)
