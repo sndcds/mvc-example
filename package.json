@@ -1,7 +1,7 @@
 {
-	"name": "@sndcds/mvc-example",
-	"version": "0.0.39",
-	"description": "Demonstration how to use the generative @sndcds/mvc library",
+  "name": "@sndcds/mvc-example",
+  "version": "0.0.43",
+  "description": "Demonstration how to use the generative @sndcds/mvc library",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -18,7 +18,8 @@
     "staticPath": "static"
   },
   "dependencies": {
-    "@sndcds/mvc": "^0.0.39"
+    "@sndcds/mvc": "^0.0.43",
+    "leaflet": "^1.9.4"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
