@@ -1,5 +1,5 @@
 import { Model, View, Router, Controller, Component } from '@sndcds/mvc'
-import { App, AppModel, HomeController, DataController, FormController, HTMLArea } from './index.js'
+import { App, AppModel, HomeController, DataController, FormController, MapController, HTMLArea } from './index.js'
 
 
 // Create model
@@ -24,11 +24,16 @@ const formRouteHandler = () => {
   new FormController(app)
 }
 
+const mapRouteHandler = () => {
+  new MapController(app)
+}
+
 // Define routes object with path and name
 const routes = [
   { name: 'home', path: '/', title: 'Home', inject: '#context-root', handler: homeRouteHandler },
   { name: 'data', path: '/data', title: 'Data', inject: '#context-root', handler: dataRouteHandler },
-  { name: 'form', path: '/form', title: 'Form', inject: '#context-root', handler: formRouteHandler }
+  { name: 'form', path: '/form', title: 'Form', inject: '#context-root', handler: formRouteHandler },
+  { name: 'map', path: '/map', title: 'Map', inject: '#context-root', handler: mapRouteHandler }
 ]
 
 

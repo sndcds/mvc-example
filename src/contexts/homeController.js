@@ -27,5 +27,6 @@ export class HomeController extends ContextController {
 
     new Button(this.view, 'button-to-form', { label: 'Form', routeName: 'form', events: [{ type: 'click', handler: this }] })
     new Button(this.view, 'button-to-data', { label: 'Data', routeName: 'data', events: [{ type: 'click', handler: this }] })
+    new Button(this.view, 'button-to-map', { label: 'Map', routeName: 'map', events: [{ type: 'click', handler: this }] })
   }
 }
