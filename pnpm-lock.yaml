@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@sndcds/mvc':
-    specifier: ^0.0.41
-    version: 0.0.41
+    specifier: ^0.0.43
+    version: 0.0.43
   leaflet:
     specifier: ^1.9.4
     version: 1.9.4
@@ -1144,8 +1144,8 @@ packages:
       nullthrows: 1.1.1
     dev: true
 
-  /@sndcds/mvc@0.0.41:
-    resolution: {integrity: sha512-av6mAaXPBTUADrljmc+4LKXp4zoB/Nm+0W0bOlDv6Yjyo3NKWNg1BKrD4eSea/ghVL2wT0S4LIdMEEAnLnu8wg==}
+  /@sndcds/mvc@0.0.43:
+    resolution: {integrity: sha512-fEHMlyYfh3TFKfOqwrpXW+LBNg3dIhbdrV7q6ZbTM2F//EK4fx0i1az0CZGMCeIinLzG+jzIuf8igFzxd9PU1w==}
     dev: false
 
   /@swc/core-darwin-arm64@1.3.91:
